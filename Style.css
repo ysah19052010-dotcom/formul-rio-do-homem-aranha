@@ -1,0 +1,93 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{ /*é a nossa caixa maior*/
+    height: 100vh;
+    display: flex;
+    align-items:center;/* é*/
+    justify-content: center;/*é pra modificar a posição do conteúdo dentro da caixa*/
+    background-image:url(./Imagens/imagem\ de\ fundo.jpg) ;/*é a imagem da nossa caixa maior, já q seria o body*/
+}
+.container{
+    width: 420px;/*não vamos colocar o heigth,pq nós vamos deixar no tamanho do conteúdo*//* essa */
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #ff0000;
+    padding: 30px 40px ;/* colocamos quatro valores,pois colocamos para cada lado*/
+    box-shadow: 0 0 10px rgba(0,0,0,90);/* é para dar sombra na caixa*/
+    backdrop-filter:blur(50px);
+}
+.container h1{
+    font-size: 36px;
+    text-align: center;
+}
+.input-box{
+    width: 100% ;/* esse 100% é equivalente ao 450px do container*/
+    height:50px; /*essa*/
+    margin:30px 0px ;
+    position: relative;/*muda a posição dos elementos de acordo com minha necesidade*/
+}
+.input-box input{
+    width: 100%;/* esse 100% é equivalente ao 50 px da outra caixa*/
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid;
+    
+    border-radius: 40px;
+    color: #ff0000;
+    outline: none;/*ela retira a bordar automatica do input*/
+    padding: 20px 45px 20px 20px  ;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top:25%;
+    font-size: 20px;
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.login{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px; rgba(0,0,0,0,0.1)
+    margin-top: 20px;
+}
+.login:hover{
+    background-color: transparent;
+    transition: 0.5s;
+    border: 2px solid rgba(255,255,255, 0.2);
+    color:#fff
+}
+.register-link{
+    text-align: center;
+    font-size: 14px;
+    margin:20px 0px 15px;
+}
+.register-link a{
+    text-align: none;
+    color:#fff;
+    font-weight: 600;
+}
+.register-link a:hover{
+    text-decoration: underline;
+
+}
